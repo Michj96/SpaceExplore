@@ -35,7 +35,7 @@ public class ObjectLocationController : MonoBehaviour
     {
         PlayerObject = new SpaceObject(0,0,0);
         LocationObjects = new List<SpaceObject>();
-        LocationObjects.Add(new SpaceObject(0, 0, 6371000));
+        LocationObjects.Add(new SpaceObject(0, 0, 50000));
     }
 
     // Update is called once per frame

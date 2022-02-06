@@ -5688,7 +5688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4c0de719a9ff04babc5ebc3d5123de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SizeInMeter: 80000
+  DiameterInMeter: 0
+  ScaleDivider: 0
 --- !u!1 &953832934 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 132870, guid: 27fe6d2a15a377f4587f716a2d37ca8a, type: 3}
@@ -5706,7 +5707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4c0de719a9ff04babc5ebc3d5123de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SizeInMeter: 155390
+  DiameterInMeter: 100000
+  ScaleDivider: 41
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5807,15 +5809,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 426654, guid: 27fe6d2a15a377f4587f716a2d37ca8a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2439
       objectReference: {fileID: 0}
     - target: {fileID: 426654, guid: 27fe6d2a15a377f4587f716a2d37ca8a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2439
       objectReference: {fileID: 0}
     - target: {fileID: 426654, guid: 27fe6d2a15a377f4587f716a2d37ca8a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2439
       objectReference: {fileID: 0}
     - target: {fileID: 426654, guid: 27fe6d2a15a377f4587f716a2d37ca8a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5827,7 +5829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 426654, guid: 27fe6d2a15a377f4587f716a2d37ca8a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20000
+      value: 50000
       objectReference: {fileID: 0}
     - target: {fileID: 426654, guid: 27fe6d2a15a377f4587f716a2d37ca8a, type: 3}
       propertyPath: m_LocalRotation.w

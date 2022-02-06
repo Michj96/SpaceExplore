@@ -5,11 +5,15 @@ using UnityEngine;
 public class ObjectSceneLocation : MonoBehaviour
 {
     private ObjectLocationController _objectLocationController;
-    public float SizeInMeter;
+    public float DiameterInMeter;
+    public float ScaleDivider;
+
+    private float _TrueDiameter;
 
     // Start is called before the first frame update
     void Start()
     {
+        _TrueDiameter = DiameterInMeter / ScaleDivider;
         _objectLocationController = GameObject.Find("ObjectLocationController").GetComponent<ObjectLocationController>();
     }
 
@@ -38,7 +42,7 @@ public class ObjectSceneLocation : MonoBehaviour
 
         Vector3 scenePosition;
 
-        if (distance < ActiveAreaRadius)
+        if (distance < ActiveAreaRadius + (DiameterInMeter / 2))
         {
             float x = (float)(_objectLocationController.LocationObjects[0].x - _objectLocationController.PlayerObject.x);
             float y = (float)(_objectLocationController.LocationObjects[0].y - _objectLocationController.PlayerObject.y);
@@ -48,15 +52,15 @@ public class ObjectSceneLocation : MonoBehaviour
         }
         else
         {
-            Vector3double calcPosition = ObjectLocationController.PointAtDistance(playerObject, thisObject, ActiveAreaRadius);
+            float scaleCalc = _TrueDiameter * (ActiveAreaRadius * Mathf.Pow((float)distance - (DiameterInMeter / 2), -1f));
+
+            Vector3double calcPosition = ObjectLocationController.PointAtDistance(playerObject, thisObject, ActiveAreaRadius + (DiameterInMeter / 2));
 
             float x = (float)(_objectLocationController.PlayerObject.x - calcPosition.x);
             float y = (float)(_objectLocationController.PlayerObject.y - calcPosition.y);
             float z = (float)(_objectLocationController.PlayerObject.z - calcPosition.z);
             
             scenePosition = new Vector3(x, y, z);
-
-            float scaleCalc = SizeInMeter * (ActiveAreaRadius * Mathf.Pow((float)distance, -1f));
 
             if (scaleCalc < 0.0001)
             {
