@@ -1,9 +1,9 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-Assets/AssetStoreTools*
+SpaceExplore Project/[Ll]ibrary/
+SpaceExplore Project/[Tt]emp/
+SpaceExplore Project/[Oo]bj/
+SpaceExplore Project/[Bb]uild/
+SpaceExplore Project/[Bb]uilds/
+SpaceExplore Project/Assets/AssetStoreTools*
 
 # Visual Studio cache directory
 .vs/
