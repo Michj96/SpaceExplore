@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     public float Throttle
     {
         get { return _throttle; }
-        private set { _throttle = Mathf.Clamp(value, 0, 100); }
+        private set { _throttle = Mathf.Clamp(value, -100, 100); }
     }
 
     // Start is called before the first frame update
