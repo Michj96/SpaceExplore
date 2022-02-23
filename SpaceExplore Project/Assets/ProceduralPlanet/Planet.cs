@@ -27,6 +27,7 @@ namespace ProceduralPlanet
         private void OnValidate()
         {
             GeneratePlanet();
+            
         }
 
         void Initialize()
