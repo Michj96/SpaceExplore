@@ -36,6 +36,7 @@ public class SectorObjectHandler : MonoBehaviour
     void Update()
     {
         gameObject.transform.position = _manager.LocationInScene(_SectorObject);
+        gameObject.transform.localScale = _manager.ScaleInSceneMultiplier(_SectorObject);
         if (Velocity != null)
         {
             _SectorObject.UpdateByVelocity(Velocity * Time.deltaTime);

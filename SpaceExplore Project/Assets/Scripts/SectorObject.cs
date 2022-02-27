@@ -7,6 +7,7 @@ public class SectorObject
     public double x;
     public double y;
     public double z;
+    public Vector3double Location { get { return new Vector3double(x, y, z); } }
 
     public SectorObject(double x, double y, double z)
     {
