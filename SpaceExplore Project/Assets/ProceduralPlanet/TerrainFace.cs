@@ -38,6 +38,17 @@ namespace ProceduralPlanet
                     Vector2 percent = new Vector2(x, y) / (resolution - 1);
                     Vector3 pointOnUnitCube = localUp + (percent.x - .5f) * 2 * axisA + (percent.y - .5f) * 2 * axisB;
                     Vector3 pointOnUnitSphere = pointOnUnitCube.normalized;
+
+                    //Vector3 pointOnUnitSphere = pointOnUnitCube / Mathf.Sqrt(pointOnUnitCube.x * pointOnUnitCube.x + pointOnUnitCube.y * pointOnUnitCube.y + pointOnUnitCube.z * pointOnUnitCube.z);
+
+                    //float x2 = pointOnUnitCube.x * pointOnUnitCube.x;
+                    //float y2 = pointOnUnitCube.y * pointOnUnitCube.y;
+                    //float z2 = pointOnUnitCube.z * pointOnUnitCube.z;
+                    //float xp = pointOnUnitCube.x * Mathf.Sqrt(1 - (y2 + z2) / 2 + (y2 * z2) / 3);
+                    //float yp = pointOnUnitCube.y * Mathf.Sqrt(1 - (z2 + x2) / 2 + (z2 * x2) / 3);
+                    //float zp = pointOnUnitCube.z * Mathf.Sqrt(1 - (x2 + y2) / 2 + (x2 * y2) / 3);
+
+                    //Vector3 pointOnUnitSphere = new Vector3(xp, yp, zp);
                     vertices[i] = shapeGenerator.CalculatePointOnPlanet(pointOnUnitSphere);
 
                     if (x != resolution - 1 && y != resolution - 1)
