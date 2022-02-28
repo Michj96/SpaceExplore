@@ -1,0 +1,524 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.26f1 (7298b473bc1a) revision 7510196'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Professional' Language: 'da' Physical Memory: 16236 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/GitHub/SpaceExplore/SpaceExplore Project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51018
+Successfully changed project path to: D:/GitHub/SpaceExplore/SpaceExplore Project
+D:/GitHub/SpaceExplore/SpaceExplore Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 26.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.26f1 (7298b473bc1a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/GitHub/SpaceExplore/SpaceExplore Project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Vendor:   
+    VRAM:     6023 MB
+    Driver:   30.0.14.7256
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001556 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 25.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.401 seconds
+Domain Reload Profiling:
+	ReloadAssembly (401ms)
+		BeginReloadAssembly (39ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (310ms)
+			LoadAssemblies (37ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (97ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (117ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (25ms)
+				BeforeProcessingInitializeOnLoad (6ms)
+				ProcessInitializeOnLoadAttributes (61ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002338 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.676 seconds
+Domain Reload Profiling:
+	ReloadAssembly (677ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (534ms)
+			LoadAssemblies (61ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (179ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (210ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (41ms)
+				ProcessInitializeOnLoadAttributes (153ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1519 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.7 MB.
+System memory in use after: 69.7 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1955.
+Total: 2.339000 ms (FindLiveObjects: 0.185800 ms CreateObjectMapping: 0.035400 ms MarkObjects: 2.067300 ms  DeleteObjects: 0.049700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/HiRezSpaceshipsCreatorFree/Materials/MainBodies
+  artifactKey: Guid(0a9d09c8b61d35c4898fd074d415b67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Materials/MainBodies using Guid(0a9d09c8b61d35c4898fd074d415b67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c7be30df7603efe2efca438186d30b3') in 0.008014 seconds 
+  Import took 0.010147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Materials/Cockpits
+  artifactKey: Guid(3a588a2f37bb25c42b76669aecde4b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Materials/Cockpits using Guid(3a588a2f37bb25c42b76669aecde4b05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e7fa7f01d8e78ba7adc561ae0732fd0') in 0.004695 seconds 
+  Import took 0.006772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Materials/Engines
+  artifactKey: Guid(ed22f079e5d645a46983e7cc87db219b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Materials/Engines using Guid(ed22f079e5d645a46983e7cc87db219b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8882aa695af36c92db6eea6d7163be84') in 0.004852 seconds 
+  Import took 0.007550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.681572 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Materials/MainBodies/Red
+  artifactKey: Guid(39dc345943360354fbf0a0a8c76cc11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Materials/MainBodies/Red using Guid(39dc345943360354fbf0a0a8c76cc11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2902f60e9d61eae3523975fff23f4505') in 0.005244 seconds 
+  Import took 0.007646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.908349 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody13/MainBody13_Red.png
+  artifactKey: Guid(eeef8fe454ce90f46930ad142548b9d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody13/MainBody13_Red.png using Guid(eeef8fe454ce90f46930ad142548b9d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '934bce80ca7fdbcdaa10bbf552640523') in 0.056003 seconds 
+  Import took 0.058224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.544012 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody13/MainBody13_Grey.png
+  artifactKey: Guid(fc28da0a17173d34b9e0495db813edff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody13/MainBody13_Grey.png using Guid(fc28da0a17173d34b9e0495db813edff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba054c618a5f7a1960cec4ab858d75b6') in 0.017722 seconds 
+  Import took 0.020092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.546111 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody13/MainBody13_Normal.png
+  artifactKey: Guid(fe2e163725cb83e498ff363bd43a6269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody13/MainBody13_Normal.png using Guid(fe2e163725cb83e498ff363bd43a6269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7dfea366d94798913df5a715c64b193') in 0.034039 seconds 
+  Import took 0.045179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.922934 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3(interior)_Grey.png
+  artifactKey: Guid(d54e9b663b16fc74f936bfa2f79a64d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3(interior)_Grey.png using Guid(d54e9b663b16fc74f936bfa2f79a64d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c0abf2a3b213139772bb92829bf0640') in 0.011624 seconds 
+  Import took 0.014146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Masks/Cockpit3(interior)_Mask1.png
+  artifactKey: Guid(5335a235890166244914938782e12f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Masks/Cockpit3(interior)_Mask1.png using Guid(5335a235890166244914938782e12f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8855611cdf69fe40671f77684045918') in 0.016384 seconds 
+  Import took 0.018651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3(interior)_Red.png
+  artifactKey: Guid(2f630998afa79c84ca282ad514eed3d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3(interior)_Red.png using Guid(2f630998afa79c84ca282ad514eed3d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6baa353d0f34c24e51460a50101cb16b') in 0.009616 seconds 
+  Import took 0.011879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3_Emission.png
+  artifactKey: Guid(c46249aa4f38c7c4f96ba2d6ef40c595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3_Emission.png using Guid(c46249aa4f38c7c4f96ba2d6ef40c595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64874114d51dc6794dc1b48ac86f6dcb') in 0.009361 seconds 
+  Import took 0.011582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Masks/Cockpit3(interior)_Neutral.png
+  artifactKey: Guid(fe03dd68c7785d84ab5093c672cabdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Masks/Cockpit3(interior)_Neutral.png using Guid(fe03dd68c7785d84ab5093c672cabdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '844b99519a32419b6620a179997df38d') in 0.009850 seconds 
+  Import took 0.012142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3(interior)_Normal.png
+  artifactKey: Guid(b7346f26dfb2ef042acc96ae49f83121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3(interior)_Normal.png using Guid(b7346f26dfb2ef042acc96ae49f83121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd22d2a6126a967e2e732f151d96055e0') in 0.010172 seconds 
+  Import took 0.012599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Masks/Cockpit3(interior)_Mask2.png
+  artifactKey: Guid(6a1c2a9d80e2d0349a40fb3afb86a588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Masks/Cockpit3(interior)_Mask2.png using Guid(6a1c2a9d80e2d0349a40fb3afb86a588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66596bd91b442a7c49a135fb5cc1dbd9') in 0.009517 seconds 
+  Import took 0.011719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3(interior)_MetallicSmoothness.png
+  artifactKey: Guid(db10fca0d9dc1d346bfe198c043a57d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3(interior)_MetallicSmoothness.png using Guid(db10fca0d9dc1d346bfe198c043a57d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd45ec78945137ea8e2859f367ee81c01') in 0.011081 seconds 
+  Import took 0.013233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.530644 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3_Grey.png
+  artifactKey: Guid(e85b59197b0fdda47b583c78415b1f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3_Grey.png using Guid(e85b59197b0fdda47b583c78415b1f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27641f86cd101d0a1fbfabb2034b54b') in 0.011237 seconds 
+  Import took 0.013606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Masks/Cockpit3_Mask1.png
+  artifactKey: Guid(ed0e6ac50a56d3e4c9022ec3bf03d5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Masks/Cockpit3_Mask1.png using Guid(ed0e6ac50a56d3e4c9022ec3bf03d5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e0883694aee20156c8c7961c7683f2') in 0.012260 seconds 
+  Import took 0.014289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019535 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Masks/Cockpit3_Mask2.png
+  artifactKey: Guid(b5ff7a98ccef01f439b2fd911d931619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Masks/Cockpit3_Mask2.png using Guid(b5ff7a98ccef01f439b2fd911d931619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c0c7b968ff9f5df9aba558a2f63609') in 0.009805 seconds 
+  Import took 0.012652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3_MetallicSmoothness.png
+  artifactKey: Guid(bdd1b3872cd77a74c805d90b38fab05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3_MetallicSmoothness.png using Guid(bdd1b3872cd77a74c805d90b38fab05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05660ab07280654caa2f44afab2d8682') in 0.010996 seconds 
+  Import took 0.013668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031564 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Masks/Cockpit3_Neutral.png
+  artifactKey: Guid(ab57406ae84cc654ab6bc7a5ee868691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Masks/Cockpit3_Neutral.png using Guid(ab57406ae84cc654ab6bc7a5ee868691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3838d366bc9ce80c64ec5ba664a9b9a') in 0.009109 seconds 
+  Import took 0.011560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3_Normal.png
+  artifactKey: Guid(2a64b4fea8c46474e870a82432edfc74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3_Normal.png using Guid(2a64b4fea8c46474e870a82432edfc74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8698a50b8883d4d66fb06f41083c8bda') in 0.011156 seconds 
+  Import took 0.013296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.258986 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3_Red.png
+  artifactKey: Guid(cbfc8e5b57a43684aacd34f77a9ceccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/Cockpit3/Cockpit3_Red.png using Guid(cbfc8e5b57a43684aacd34f77a9ceccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351df03955b0b44c8d692db0ab79078e') in 0.012582 seconds 
+  Import took 0.015074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/CockpitEquipments-Screens.png
+  artifactKey: Guid(2cd164d6c3bf8dd40931f439f15d45e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/CockpitEquipments-Screens.png using Guid(2cd164d6c3bf8dd40931f439f15d45e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11239a09932a7e0554081de6d532c2ed') in 0.010545 seconds 
+  Import took 0.013097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010483 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/CockpitsEquipments_Albedo.png
+  artifactKey: Guid(67422a5be38c745449c6a2b0410e22e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/CockpitsEquipments_Albedo.png using Guid(67422a5be38c745449c6a2b0410e22e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6631477841f2ecc5c0a448912e61c02') in 0.009846 seconds 
+  Import took 0.012315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/Masks/CockpitsEquipments_Mask3.png
+  artifactKey: Guid(e2ab8ea1926583a448744e4c3fdd6277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/Masks/CockpitsEquipments_Mask3.png using Guid(e2ab8ea1926583a448744e4c3fdd6277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4876b5960767994204a76962fc87ccb7') in 0.009919 seconds 
+  Import took 0.012202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/CockpitsEquipments_MetallicSmoothness.png
+  artifactKey: Guid(40bbb22a7e9e1eb458fb044f32b0a36c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/CockpitsEquipments_MetallicSmoothness.png using Guid(40bbb22a7e9e1eb458fb044f32b0a36c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93fd4c65571cde7e5ec25637bc3b078b') in 0.010721 seconds 
+  Import took 0.012885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/Masks/CockpitsEquipments_Mask1.png
+  artifactKey: Guid(1282d2ba7451789499250058fb32eebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/Masks/CockpitsEquipments_Mask1.png using Guid(1282d2ba7451789499250058fb32eebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922b042c066ce0bc37c6d507d75623fd') in 0.010224 seconds 
+  Import took 0.012527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/CockpitsEquipmentsl_Normal.png
+  artifactKey: Guid(b36724e6125a59045af03ebb7d8aa8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/CockpitsEquipmentsl_Normal.png using Guid(b36724e6125a59045af03ebb7d8aa8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '551af8025630e709b4cdd5d6e17ab672') in 0.010889 seconds 
+  Import took 0.013209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Engine1_Grey.png
+  artifactKey: Guid(a8a686bc5dee7664f8d7019efe64e812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Engine1_Grey.png using Guid(a8a686bc5dee7664f8d7019efe64e812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e58b7cf208693998bc7694b75b2466d0') in 0.009524 seconds 
+  Import took 0.011716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/Masks/CockpitsEquipments_Mask2.png
+  artifactKey: Guid(449cd94dd3780f8459b1d619676a4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/Masks/CockpitsEquipments_Mask2.png using Guid(449cd94dd3780f8459b1d619676a4b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c42237a2c416c14972373618c564dccf') in 0.010230 seconds 
+  Import took 0.012766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Masks/Engine1_Mask2.png
+  artifactKey: Guid(55bc630b091595f469f24d4cfbae007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Masks/Engine1_Mask2.png using Guid(55bc630b091595f469f24d4cfbae007f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c184c598b1112cd918a49ab847fab84b') in 0.010580 seconds 
+  Import took 0.012954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/Masks/CockpitsEquipments_Neutral.png
+  artifactKey: Guid(e6d66f1655c376148afd7748aae12118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Cockpits/CockpitsEquipments/Masks/CockpitsEquipments_Neutral.png using Guid(e6d66f1655c376148afd7748aae12118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39cb3b55479570d1d0479b6bf7ac68a7') in 0.009906 seconds 
+  Import took 0.012102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Engine1_Red.png
+  artifactKey: Guid(ad0a3b43648aaea4a871045137f40cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Engine1_Red.png using Guid(ad0a3b43648aaea4a871045137f40cbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0dcf8acb9fca23ea025bfc7f36f4494') in 0.010581 seconds 
+  Import took 0.012922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Engine1_MetallicSmoothness.png
+  artifactKey: Guid(c54e7ee73bebdca4cbdc76ac7918954d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Engine1_MetallicSmoothness.png using Guid(c54e7ee73bebdca4cbdc76ac7918954d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c093499a72ca82c94668042ead36d42a') in 0.010482 seconds 
+  Import took 0.013037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Masks/Engine1_Mask1.png
+  artifactKey: Guid(65db7f8c1be1caa4cb1a74184dd653d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Masks/Engine1_Mask1.png using Guid(65db7f8c1be1caa4cb1a74184dd653d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27cb697a64daa40507673d19a5c9560') in 0.009515 seconds 
+  Import took 0.011757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody13/Masks/MainBody13_Mask1.png
+  artifactKey: Guid(0c7d7214cb004f24f9da086c70443595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody13/Masks/MainBody13_Mask1.png using Guid(0c7d7214cb004f24f9da086c70443595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16eb59b5c2926da55c0cd3b126199f5') in 0.009542 seconds 
+  Import took 0.011919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody13/MainBody13_MetallicSmoothness.png
+  artifactKey: Guid(9d7da096aebbcb54bb22fd6953e517fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody13/MainBody13_MetallicSmoothness.png using Guid(9d7da096aebbcb54bb22fd6953e517fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2057d2742ab07740fe97a3378f32f17b') in 0.011150 seconds 
+  Import took 0.013487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody13/Masks/MainBody13_Mask2.png
+  artifactKey: Guid(971f14aa4e60cea458829a30151f813e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody13/Masks/MainBody13_Mask2.png using Guid(971f14aa4e60cea458829a30151f813e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fadd94a2200ca41d6eebee055f85e5bb') in 0.009584 seconds 
+  Import took 0.011661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Masks/Engine1_Neutral.png
+  artifactKey: Guid(43585d00c43c25f4d8c4d32eb00ee80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Masks/Engine1_Neutral.png using Guid(43585d00c43c25f4d8c4d32eb00ee80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af9efa3e10cb1f5340219bba060e4092') in 0.009809 seconds 
+  Import took 0.011998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Engine1_Normal.png
+  artifactKey: Guid(0d1ca60291887c14c85aa7eb169492b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Engine1/Engine1_Normal.png using Guid(0d1ca60291887c14c85aa7eb169492b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e527bc98f060bad99a773a2bcdbf889f') in 0.011564 seconds 
+  Import took 0.014043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012385 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Thrusters/Thrusters_Albedo.png
+  artifactKey: Guid(5c63c83ee675bc046905dceac132b364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Thrusters/Thrusters_Albedo.png using Guid(5c63c83ee675bc046905dceac132b364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72a8222f65d35cc7169645b7bb600fb') in 0.009156 seconds 
+  Import took 0.011461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Thrusters/Thrusters_Emission1.png
+  artifactKey: Guid(5bfc5eefcdd7ca04ebb6e1e089e6b3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Thrusters/Thrusters_Emission1.png using Guid(5bfc5eefcdd7ca04ebb6e1e089e6b3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4971449959dcc360ccf845f45b52547a') in 0.009852 seconds 
+  Import took 0.011814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016658 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Thrusters/Thrusters_MetallicSmoothness.png
+  artifactKey: Guid(d3b7b7cf6694c694dbe7450650201a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Thrusters/Thrusters_MetallicSmoothness.png using Guid(d3b7b7cf6694c694dbe7450650201a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87a5c2d66376dd151e3c23fd4918ebc8') in 0.010124 seconds 
+  Import took 0.012479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Thrusters/Thrusters_Normal.png
+  artifactKey: Guid(7f69fbabbfab1a44485b832cf5f0a2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/Engines/Thrusters/Thrusters_Normal.png using Guid(7f69fbabbfab1a44485b832cf5f0a2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac99b761aa3d1508da6db37f9bb9e975') in 0.009771 seconds 
+  Import took 0.011938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.623087 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody2/MainBody2_Red.png
+  artifactKey: Guid(8f19f91964f964b41b91d12dfe064cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody2/MainBody2_Red.png using Guid(8f19f91964f964b41b91d12dfe064cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fac96ab5a7997fe4ca96ce1b0ee62ddf') in 0.005501 seconds 
+  Import took 0.008258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.344959 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody2/MainBody2_Normal.png
+  artifactKey: Guid(eb189a7044568b641a98cacb8db0c57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody2/MainBody2_Normal.png using Guid(eb189a7044568b641a98cacb8db0c57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d5897dd8f2046e6d2c4bb059c0d5ad0') in 0.005462 seconds 
+  Import took 0.015726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.580169 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody2/MainBody2_MetallicSmoothness.png
+  artifactKey: Guid(f33bc51cdd822d24ba4d31ac7b5f1824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody2/MainBody2_MetallicSmoothness.png using Guid(f33bc51cdd822d24ba4d31ac7b5f1824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4520f28f87e30d861edb012a0e810ae') in 0.005591 seconds 
+  Import took 0.008137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.706616 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody2/Masks
+  artifactKey: Guid(4b04a27977bb3754f97e596556b15f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody2/Masks using Guid(4b04a27977bb3754f97e596556b15f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87ebb86d48d3eceb7448aebc20f87c5c') in 0.005710 seconds 
+  Import took 0.008204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.645007 seconds.
+  path: Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody2/MainBody2_Grey.png
+  artifactKey: Guid(073034ed62d69a0479d02726d70c04f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HiRezSpaceshipsCreatorFree/Textures/MainBodies/MainBody2/MainBody2_Grey.png using Guid(073034ed62d69a0479d02726d70c04f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fafedb2d9a977f70fc3dbe27f2fda7ee') in 0.005413 seconds 
+  Import took 0.007860 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -401,7 +401,7 @@ MonoBehaviour:
   IsOrigin: 0
   x: 0
   y: 0
-  z: 20000
+  z: 2000
   Velocity: {x: 0, y: 0, z: 0}
 --- !u!4 &1014159964
 Transform:
@@ -411,7 +411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014159962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 20000}
+  m_LocalPosition: {x: 0, y: 0, z: 2000}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1021808232}
@@ -446,7 +446,7 @@ Transform:
   m_GameObject: {fileID: 1021808231}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10000, y: 10000, z: 10000}
+  m_LocalScale: {x: 1000, y: 1000, z: 1000}
   m_Children: []
   m_Father: {fileID: 1014159964}
   m_RootOrder: 0
@@ -575,7 +575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsOrigin: 1
   x: 0
-  y: 1000
+  y: 0
   z: 0
   Velocity: {x: 0, y: 0, z: 0}
 --- !u!1 &1096190801
