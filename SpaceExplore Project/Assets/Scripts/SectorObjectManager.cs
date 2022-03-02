@@ -6,7 +6,7 @@ using UnityEngine;
 public class SectorObjectManager : MonoBehaviour
 {
     public float ScalingStart;
-    private float ScalingEnd = 50000;
+    private float ScalingEnd;
 
     SectorObject _originObject;
     List<SectorObject> _objectList = new List<SectorObject>();
@@ -14,7 +14,7 @@ public class SectorObjectManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        ScalingEnd = ScalingStart + 30000;
     }
 
     // Update is called once per frame
@@ -56,11 +56,14 @@ public class SectorObjectManager : MonoBehaviour
     {
         double distance = DistanceInWorld(sectorObject);
 
+        float mStart = 1;
+        float mEnd = 0;
+
         if (distance > ScalingStart)
         {
-            float a = -1 / (ScalingEnd - ScalingStart);
-            float b = (float)(1 - a * ScalingStart);
-            float scale = Mathf.Clamp01((float)(a * distance + b));
+            float a = (float)((mStart - mEnd) / Math.Log(ScalingStart / ScalingEnd));
+            float b = (float)Math.Exp((mEnd * Math.Log(ScalingStart) - mStart * Math.Log(ScalingEnd)) / (mStart - mEnd));
+            float scale = Mathf.Clamp01( (float)(a * Math.Log(b * distance)) );
             return new Vector3(scale,scale,scale);
         }
         else

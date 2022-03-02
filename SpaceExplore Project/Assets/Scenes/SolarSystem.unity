@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3554b36f086240b48a591ff7be61e010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScalingStart: 5000
+  ScalingStart: 20000
 --- !u!4 &920086533
 Transform:
   m_ObjectHideFlags: 0
@@ -402,7 +402,7 @@ MonoBehaviour:
   x: 0
   y: 0
   z: 2000
-  Velocity: {x: 0, y: 0, z: 0}
+  Velocity: {x: 0, y: 0, z: 3000}
 --- !u!4 &1014159964
 Transform:
   m_ObjectHideFlags: 0
