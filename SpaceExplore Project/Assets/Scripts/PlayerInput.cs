@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerInput : MonoBehaviour
 {
     public Transform transform;
-    public SectorObjectHandler Handler;
+    public FloatOriginHandler Handler;
 
     private float _throttle;
     public float Throttle

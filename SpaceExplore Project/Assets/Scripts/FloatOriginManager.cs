@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SectorObjectManager : MonoBehaviour
+public class FloatOriginManager : MonoBehaviour
 {
     public float ScalingStart;
     private float ScalingEnd;
 
-    SectorObject _originObject;
-    List<SectorObject> _objectList = new List<SectorObject>();
+    FloatOriginObject _originObject;
+    List<FloatOriginObject> _objectList = new List<FloatOriginObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -23,12 +23,12 @@ public class SectorObjectManager : MonoBehaviour
         
     }
 
-    public void AddObject(SectorObject sectorObject)
+    public void AddObject(FloatOriginObject sectorObject)
     {
         _objectList.Add(sectorObject);
     }
 
-    public void SetOrigin(SectorObject originObject)
+    public void SetOrigin(FloatOriginObject originObject)
     {
         if (_originObject != null)
         {
@@ -37,7 +37,7 @@ public class SectorObjectManager : MonoBehaviour
         _originObject = originObject;
     }
 
-    public Vector3 LocationInScene(SectorObject sectorObject)
+    public Vector3 LocationInScene(FloatOriginObject sectorObject)
     {
         double distance = DistanceInWorld(sectorObject);
 
@@ -52,7 +52,7 @@ public class SectorObjectManager : MonoBehaviour
         }
     }
 
-    public Vector3 ScaleInSceneMultiplier(SectorObject sectorObject)
+    public Vector3 ScaleInSceneMultiplier(FloatOriginObject sectorObject)
     {
         double distance = DistanceInWorld(sectorObject);
 
@@ -72,7 +72,7 @@ public class SectorObjectManager : MonoBehaviour
         }
     }
 
-    public double DistanceInWorld(SectorObject sectorObject)
+    public double DistanceInWorld(FloatOriginObject sectorObject)
     {
         return Vector3double.Distance(sectorObject.Location, _originObject.Location);
     }
