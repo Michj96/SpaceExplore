@@ -446,6 +446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transform: {fileID: 1088642992}
   Handler: {fileID: 1088642993}
+  Laser: {fileID: 3532578988397235452, guid: 2989f98a108469847a3e86b76627ca4f, type: 3}
 --- !u!4 &1088642992
 Transform:
   m_ObjectHideFlags: 0
@@ -454,7 +455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1088642990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10000}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2099135882}
@@ -477,7 +478,7 @@ MonoBehaviour:
   IsOrigin: 1
   x: 0
   y: 0
-  z: 0
+  z: -10000
   Velocity: {x: 0, y: 0, z: 0}
 --- !u!1 &1096190801
 GameObject:

@@ -8,12 +8,17 @@ public class PlayerInput : MonoBehaviour
     public Transform transform;
     public FloatOriginHandler Handler;
 
+    public GameObject Laser;
+
     private float _throttle;
     public float Throttle
     {
         get { return _throttle; }
         private set { _throttle = Mathf.Clamp(value, -100, 100); }
     }
+
+    private float rateOfFirePointer;
+    private int shootCycle = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +33,12 @@ public class PlayerInput : MonoBehaviour
         float rotate = Input.GetAxis("Horizontal") * 50;
         float throttle = Input.GetAxis("Throttle") * 50;
 
+        if (Input.GetButton("Fire1") && Time.time > rateOfFirePointer)
+        {
+            rateOfFirePointer = Time.time + 0.5f;
+            SpawnLaser();
+        }
+
         Throttle += throttle * Time.deltaTime;
         transform.Rotate(Vector3.left * pitch * Time.deltaTime);
         transform.Rotate(Vector3.forward * -rotate * Time.deltaTime);
@@ -41,5 +52,15 @@ public class PlayerInput : MonoBehaviour
     {
         Vector3 forwardVector = Quaternion.Euler(transform.rotation.eulerAngles) * Vector3.forward * velocity;
         return forwardVector;
+    }
+
+    private void SpawnLaser()
+    {
+
+        GameObject laser = Instantiate(Laser) as GameObject;
+        laser.transform.localRotation = transform.rotation;
+        FloatOriginHandler foh = laser.GetComponent<FloatOriginHandler>();
+        foh.Velocity = Handler.Velocity + ForwardVelocity(2000);
+        foh.WorldLocation = Handler.WorldLocation;
     }
 }
