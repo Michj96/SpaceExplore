@@ -35,7 +35,7 @@ public class PlayerInput : MonoBehaviour
 
         if (Input.GetButton("Fire1") && Time.time > rateOfFirePointer)
         {
-            rateOfFirePointer = Time.time + 0.5f;
+            rateOfFirePointer = Time.time + (0.1f);
             SpawnLaser();
         }
 
@@ -56,11 +56,24 @@ public class PlayerInput : MonoBehaviour
 
     private void SpawnLaser()
     {
+        float offset = 0;
+        if (shootCycle == 0)
+        {
+            offset = 2.843f;
+            shootCycle = 1;
+        }
+        else
+        {
+            offset = -2.843f;
+            shootCycle = 0;
+        }
 
         GameObject laser = Instantiate(Laser) as GameObject;
         laser.transform.localRotation = transform.rotation;
         FloatOriginHandler foh = laser.GetComponent<FloatOriginHandler>();
         foh.Velocity = Handler.Velocity + ForwardVelocity(2000);
-        foh.WorldLocation = Handler.WorldLocation;
+        
+        Vector3 t = (Quaternion.Euler(transform.rotation.eulerAngles) * Vector3.left * offset);
+        foh.WorldLocation = Handler.WorldLocation + t;
     }
 }
