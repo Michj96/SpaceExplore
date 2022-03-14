@@ -444,7 +444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396d939c4adb80a498ec38b379c25f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transform: {fileID: 1088642992}
   Handler: {fileID: 1088642993}
   Laser: {fileID: 3532578988397235452, guid: 2989f98a108469847a3e86b76627ca4f, type: 3}
 --- !u!4 &1088642992

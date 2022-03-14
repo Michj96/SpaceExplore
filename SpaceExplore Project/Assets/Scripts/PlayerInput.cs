@@ -15,6 +15,8 @@ public class PlayerInput : MonoBehaviour
     Vector3 LookAtPos;
     Vector3 SmoothedLookAtPos;
 
+    Vector2 mouseSteer = new Vector2(0, 0);
+
     public float Throttle
     {
         get { return _throttle; }
@@ -33,9 +35,11 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float pitch = Input.GetAxis("Vertical") * 50;
+        
         float rotate = Input.GetAxis("Horizontal") * 50;
         float throttle = Input.GetAxis("Throttle") * 50;
+        float pitch = 0;
+        float yaw = 0;
 
         if (Input.GetButton("Fire1") && Time.time > rateOfFirePointer)
         {
@@ -46,18 +50,37 @@ public class PlayerInput : MonoBehaviour
         // Only activate mouse steering, when holding space.
         if (Input.GetButton("Mouse Steering"))
         {
+            float m_x = Input.GetAxis("Mouse X");
+            float m_y = Input.GetAxis("Mouse Y");
+
+            mouseSteer.x += m_x * Time.deltaTime * 10;
+            mouseSteer.y += m_y * Time.deltaTime * 10;
+
+            mouseSteer.x = Mathf.Clamp(mouseSteer.x, -1, 1);
+            mouseSteer.y = Mathf.Clamp(mouseSteer.y, -1, 1);
+
+            pitch = mouseSteer.y * Time.deltaTime * 8000;
+            yaw = mouseSteer.x * Time.deltaTime * 8000;
+
+            //Debug.Log($"{mouseSteer.x}, {mouseSteer.y}");
+
             //Look At the Mouse
-            LookAtPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100));
-            SmoothedLookAtPos = Vector3.Lerp(SmoothedLookAtPos, LookAtPos, Time.deltaTime / 5);
+            //LookAtPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100));
+            //SmoothedLookAtPos = Vector3.Lerp(SmoothedLookAtPos, LookAtPos, Time.deltaTime / 5);
 
             // Saving the z, so we can roll and still use mouselook
-            var oldZ = transform.rotation.eulerAngles.z;
+            //var oldZ = transform.rotation.eulerAngles.z;
 
             // Calculating the rotation
-            transform.LookAt(SmoothedLookAtPos);
+            //transform.LookAt(SmoothedLookAtPos);
 
             // Using the calculated rotation, but keeping the old Z. Z would be 0 otherwise.
-            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, oldZ);
+            //transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, oldZ);
+
+        }
+        else
+        {
+            pitch = Input.GetAxis("Vertical") * 50;
         }
 
         // Stop slowly
@@ -89,6 +112,8 @@ public class PlayerInput : MonoBehaviour
         Throttle += throttle * Time.deltaTime;
         transform.Rotate(Vector3.left * pitch * Time.deltaTime);
         transform.Rotate(Vector3.forward * -rotate * Time.deltaTime);
+        transform.Rotate(Vector3.up * yaw * Time.deltaTime);
+
 
         Handler.Velocity = ForwardVelocity(Throttle * 3);
 
