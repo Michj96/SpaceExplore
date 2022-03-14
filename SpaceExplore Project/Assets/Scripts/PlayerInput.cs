@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class PlayerInput : MonoBehaviour
 {
-    public Transform transform;
+    //public Transform transform;
     public FloatOriginHandler Handler;
 
     public GameObject Laser;
 
     private float _throttle;
+
+    Vector3 LookAtPos;
+    Vector3 SmoothedLookAtPos;
+
     public float Throttle
     {
         get { return _throttle; }
@@ -38,6 +42,49 @@ public class PlayerInput : MonoBehaviour
             rateOfFirePointer = Time.time + (0.1f);
             SpawnLaser();
         }
+
+        // Only activate mouse steering, when holding space.
+        if (Input.GetButton("Mouse Steering"))
+        {
+            //Look At the Mouse
+            LookAtPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 100));
+            SmoothedLookAtPos = Vector3.Lerp(SmoothedLookAtPos, LookAtPos, Time.deltaTime / 5);
+
+            // Saving the z, so we can roll and still use mouselook
+            var oldZ = transform.rotation.eulerAngles.z;
+
+            // Calculating the rotation
+            transform.LookAt(SmoothedLookAtPos);
+
+            // Using the calculated rotation, but keeping the old Z. Z would be 0 otherwise.
+            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, oldZ);
+        }
+
+        // Stop slowly
+        if (Input.GetButton("Stop"))
+        {
+            Throttle = Mathf.Lerp(Throttle, 0, 3 * Time.deltaTime);
+
+            // Making sure we actually stop, instead of having a tiny tiny velocity.
+            if (Throttle < 1)
+            {
+                Throttle = 0;
+            }
+
+        }
+
+        // Full speed forward
+        if (Input.GetButton("Full Speed"))
+        {
+            Throttle = Mathf.Lerp(Throttle, 100, 3 * Time.deltaTime);
+
+            // Same as stopping, but opposite.
+            if (Throttle > 99)
+            {
+                Throttle = 100;
+            }
+        }
+
 
         Throttle += throttle * Time.deltaTime;
         transform.Rotate(Vector3.left * pitch * Time.deltaTime);
