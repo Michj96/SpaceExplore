@@ -9,6 +9,7 @@ public class StarSystemManager : MonoBehaviour
     public GameObject Star;
     public GameObject Planet;
 
+
     void Start()
     {
         System = new StarSystem();
@@ -26,6 +27,9 @@ public class StarSystemManager : MonoBehaviour
         GameObject starGo = Instantiate(Star) as GameObject;
         float radius = System.star.Radius;
         starGo.transform.Find("Model").localScale = new Vector3(radius, radius, radius);
+
+        var enemyManager = GameObject.Find("EnemyManager").GetComponent<EnemyManager>();
+        enemyManager.SpawnEnemies(starGo);
 
         foreach(Celestial c in System.star.sattelites)
         {
