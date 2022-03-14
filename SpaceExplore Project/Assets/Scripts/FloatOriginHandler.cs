@@ -28,6 +28,8 @@ public class FloatOriginHandler : MonoBehaviour
 
     public Vector3 Velocity;
 
+    public float LifeTime = 0;
+
     private FloatOriginManager _manager;
 
     private FloatOriginObject _object;
@@ -45,6 +47,10 @@ public class FloatOriginHandler : MonoBehaviour
         else
         {
             _manager.AddObject(_object);
+            if (LifeTime > 0)
+            {
+                StartCoroutine(DestroyAfterTime(LifeTime));
+            }
         }
     }
 
@@ -61,5 +67,12 @@ public class FloatOriginHandler : MonoBehaviour
         {
             _object.UpdateByVelocity(Velocity * Time.deltaTime);
         }
+    }
+
+    IEnumerator DestroyAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        _manager.RemoveObject(_object);
+        Destroy(gameObject);
     }
 }

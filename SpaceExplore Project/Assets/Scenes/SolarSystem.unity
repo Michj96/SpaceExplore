@@ -480,6 +480,7 @@ MonoBehaviour:
   y: 0
   z: -10000
   Velocity: {x: 0, y: 0, z: 0}
+  LifeTime: 0
 --- !u!1 &1096190801
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,9 +603,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1088642992}
     m_Modifications:
+    - target: {fileID: 1448904757241992, guid: 8b9e8529f42020f4dacf64553cb2203d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1490940885494484, guid: 8b9e8529f42020f4dacf64553cb2203d, type: 3}
       propertyPath: m_Name
       value: Example1NoInterior_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490940885494484, guid: 8b9e8529f42020f4dacf64553cb2203d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4015824563621198, guid: 8b9e8529f42020f4dacf64553cb2203d, type: 3}
       propertyPath: m_RootOrder

@@ -50,6 +50,7 @@ MonoBehaviour:
   y: 0
   z: 0
   Velocity: {x: 0, y: 0, z: 0}
+  LifeTime: 2
 --- !u!1 &3532578988829679290
 GameObject:
   m_ObjectHideFlags: 0

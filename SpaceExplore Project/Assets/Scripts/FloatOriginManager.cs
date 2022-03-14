@@ -28,6 +28,14 @@ public class FloatOriginManager : MonoBehaviour
         _objectList.Add(sectorObject);
     }
 
+    public void RemoveObject(FloatOriginObject floatObject)
+    {
+        if (_objectList.Contains(floatObject))
+        {
+            _objectList.Remove(floatObject);
+        }
+    }
+
     public void SetOrigin(FloatOriginObject originObject)
     {
         if (_originObject != null)
