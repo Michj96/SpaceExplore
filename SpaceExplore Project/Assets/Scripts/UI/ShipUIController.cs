@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ShipUIController : MonoBehaviour
 {
     public static string Throttle;
+    //public static float TimeScale;
 
     public Text ThrottleDisplay;
     public Text TADisplay;
