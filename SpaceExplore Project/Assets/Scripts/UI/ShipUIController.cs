@@ -8,6 +8,7 @@ public class ShipUIController : MonoBehaviour
     public static string Throttle;
 
     public Text ThrottleDisplay;
+    public Text TADisplay;
 
     // Start is called before the first frame update
     void Start()
@@ -19,5 +20,6 @@ public class ShipUIController : MonoBehaviour
     void Update()
     {
         ThrottleDisplay.text = Throttle;
+        TADisplay.text = "TA: " + $"{Mathf.Round(Time.timeScale)}";
     }
 }
