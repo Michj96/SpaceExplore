@@ -422,7 +422,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1230730889}
+  - component: {fileID: 1088642992}
+  - component: {fileID: 1088642991}
+  - component: {fileID: 1088642993}
+  - component: {fileID: 1088642994}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -430,7 +433,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1230730889
+--- !u!114 &1088642991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088642990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396d939c4adb80a498ec38b379c25f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Handler: {fileID: 1088642993}
+  Laser: {fileID: 3532578988397235452, guid: 2989f98a108469847a3e86b76627ca4f, type: 3}
+--- !u!4 &1088642992
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -447,7 +464,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1487652104
+--- !u!114 &1088642993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088642990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e2142aac8c3214fa86bd37c0f9fb23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsOrigin: 1
+  x: 0
+  y: 0
+  z: -10000
+  Velocity: {x: 0, y: 0, z: 0}
+  LifeTime: 0
+--- !u!114 &1088642994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088642990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a5e888e35369d14793e7a3717afb212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1096190801
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
