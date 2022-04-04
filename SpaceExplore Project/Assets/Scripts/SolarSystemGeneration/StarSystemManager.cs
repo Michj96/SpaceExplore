@@ -28,7 +28,7 @@ public class StarSystemManager : MonoBehaviour
         float radius = System.star.Radius;
         starGo.transform.Find("Model").localScale = new Vector3(radius, radius, radius);
 
-        var enemyManager = GameObject.Find("EnemyManager").GetComponent<EnemyManager>();
+        var enemyManager = GameObject.Find("Managers").GetComponent<EnemyManager>();
         enemyManager.SpawnEnemies(starGo);
 
         foreach(Celestial c in System.star.sattelites)

@@ -25,14 +25,17 @@ public class EnemyManager : MonoBehaviour
 
     public void SpawnEnemies(GameObject go)
     {
-        GameObject enemy = Instantiate(Enemy);
-        _handler = enemy.GetComponent<FloatOriginHandler>();
-        _behaviour = enemy.GetComponent<EnemyBehaviour>();
-        //go.transform.z
-        _handler.x = 0;
-        _handler.y = 0;
-        _handler.z = 0;
-        _handler.Velocity = new Vector3(0, 100, 0);
-        _behaviour.star = go;
+        for (int i = 0; i < 1; i++)
+        {
+            GameObject enemy = Instantiate(Enemy, go.transform);
+            _handler = enemy.GetComponent<FloatOriginHandler>();
+            _behaviour = enemy.GetComponent<EnemyBehaviour>();
+            _handler.x = 5000;
+            _handler.y = 5000;
+            _handler.z = 5000;
+            //go.transform.z
+            enemy.transform.position += new Vector3(Random.Range(0, 1000), Random.Range(0, 1000), Random.Range(0, 1000));
+            //_handler.Velocity = new Vector3(0, 100, 0);
+        }
     }
 }
