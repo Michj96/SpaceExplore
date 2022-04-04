@@ -53,8 +53,8 @@ public class PlayerInput : MonoBehaviour
             float m_x = Input.GetAxis("Mouse X");
             float m_y = Input.GetAxis("Mouse Y");
 
-            mouseSteer.x += m_x * Time.deltaTime * 10;
-            mouseSteer.y += m_y * Time.deltaTime * 10;
+            mouseSteer.x += m_x * Time.deltaTime * 30;
+            mouseSteer.y += m_y * Time.deltaTime * 30;
 
             mouseSteer.x = Mathf.Clamp(mouseSteer.x, -1, 1);
             mouseSteer.y = Mathf.Clamp(mouseSteer.y, -1, 1);

@@ -10,17 +10,23 @@ public class EnemyManager : MonoBehaviour
 
     FloatOriginHandler _handler;
 
+    GameObject star;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        star = GameObject.FindGameObjectWithTag("Star");
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        EnemyBehaviour[] enemy = FindObjectsOfType<EnemyBehaviour>();
+        if(enemy == null || enemy.Length == 0)
+        {
+            SpawnEnemies(star);
+        }
     }
 
     public void SpawnEnemies(GameObject go)
