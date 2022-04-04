@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 877d6f5193df8cd438428eaa54918058
+  - enabled: 1
+    path: Assets/Scenes/SolarSystem.unity
+    guid: 92eeee2210092554f81c1573c22ddec0
+  - enabled: 1
+    path: Assets/Scenes/ShipUI.unity
+    guid: 511c3bf066a8af84699b7eff51dcb220
   m_configObjects: {}
